@@ -41,11 +41,12 @@ curl -fsSL "https://github.com/lausannel/.tmux/raw/refs/heads/master/install.sh#
 ```
 
 **Manual installation in `~`**
-```
-$ cd
-$ git clone --single-branch https://github.com/lausannel/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+```bash
+cd
+git clone --single-branch https://github.com/lausannel/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
+tmux source ~/.tmux/.tmux.conf
 ```
 
 **Manual installation in `$XDG_CONFIG_HOME/tmux`**
